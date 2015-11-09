@@ -56,3 +56,6 @@ begin
     s3 <= (a or (not b)) and ( not(c or (a and b)));
     
 end Behavioral;
+
+
+-- teste
