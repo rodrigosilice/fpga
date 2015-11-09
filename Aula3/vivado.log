@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 09 20:38:14 2015
+# Process ID: 8840
+# Log file: T:/Rodrigo/Aula3/vivado.log
+# Journal file: T:/Rodrigo/Aula3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {T:\Rodrigo\Aula3\Aula3.xpr}
+Scanning sources...
+Finished scanning sources
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 09 20:38:29 2015...

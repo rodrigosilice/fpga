@@ -3,9 +3,9 @@
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="PWROPT-DCP" Name="exercicio2a_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="exercicio2a_drc_opted.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="exercicio2a_timing_summary_routed.pb"/>
   <File Type="PA-TCL" Name="exercicio2a.tcl"/>
-  <File Type="OPT-DRC" Name="exercicio2a_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="exercicio2a_opt.dcp"/>
   <File Type="PWROPT-DRC" Name="exercicio2a_drc_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="exercicio2a_placed.dcp"/>
@@ -30,8 +30,8 @@
   <File Type="ROUTE-SIMILARITY" Name="exercicio2a_incremental_reuse_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="exercicio2a_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="exercicio2a_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="exercicio2a_timing_summary_postroute_physopted.pb"/>
   <File Type="RDI-RDI" Name="exercicio2a.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="exercicio2a_timing_summary_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="exercicio2a.bit"/>
   <File Type="BG-BIN" Name="exercicio2a.bin"/>
   <File Type="BITSTR-MSK" Name="exercicio2a.msk"/>
