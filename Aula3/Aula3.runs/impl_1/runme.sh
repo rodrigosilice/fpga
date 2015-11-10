@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log exercicio2a.vdi -applog -m64 -messageDb vivado.pb -mode batch -source exercicio2a.tcl -notrace
+EAStep vivado -log Exercicio1.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Exercicio1.tcl -notrace
 
 

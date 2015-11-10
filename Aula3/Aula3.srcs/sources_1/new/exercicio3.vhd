@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 26.10.2015 21:50:50
+-- Create Date: 09.11.2015 22:13:33
 -- Design Name: 
--- Module Name: exercicio3 - Behavioral
+-- Module Name: Exercicio3 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -19,10 +19,8 @@
 ----------------------------------------------------------------------------------
 
 
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.all;
-
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,35 +31,40 @@ use IEEE.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-ENTITY exercicio3 IS
-END exercicio3;
+entity Exercicio3 is
+   Port (  clk : in std_logic;
+           rst : in std_logic;
+           led : out std_logic;
+           in_sw: in std_logic_vector(2 downto 0)
+           
+         );
+end Exercicio3;
 
+architecture Behavioral of Exercicio3 is
 
-ARCHITECTURE bhv OF exercicio3 IS
--- Declaracoes sinais e constantes
-    signal slv : std_logic_vector(7 downto 0);
-    signal s : signed(7 downto 0);
-    signal us : unsigned(7 downto 0);
-    signal i : integer range 0 to 12;
+begin
+signal cnt : integer range 0 to 100_000_000 := 0;
+    signal led_i : std_logic := '0';
 
-BEGIN
+begin
+    contador:process(clk, rst)
+    begin
+        if(rst = '1') then
+            cnt <= 0;
+        elsif(rising_edge(clk)) then
+        
+            case in_sw is
+            when "00"
+                if (cnt = 100_000_000) then
+                    cnt <= 0;
+                    led_i<= not led_i;
+                else
+                    cnt <= cnt + 1;
+                end if;
+                
+        end if;
+    end process;
 
-    -- Signed
-    slv <= std_logic_vector(s);
-    us <= unsigned(std_logic_vector(s));
-    i <= to_integer(s);
-    -- std_logic_vector
-    s <= signed(slv);
-    us <= unsigned(slv);
-    i <=  to_integer(unsigned(slv));
-    -- unsigned
-    slv <=std_logic_vector(us);
-    s <= signed(std_logic_vector(us));
-    i <= to_integer(us);
-    -- integer
-    slv <= std_logic_vector(to_signed(i,8));
-    s <= to_signed(i,8);
-    us <= to_unsigned(i,8);
+    led <= led_i;
 
-
-END bhv;
+end Behavioral;

@@ -1,50 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1445903326">
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1447111717">
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
-  <File Type="PWROPT-DCP" Name="exercicio2a_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="Exercicio1_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DRC" Name="exercicio2a_drc_opted.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="exercicio2a_timing_summary_routed.pb"/>
-  <File Type="PA-TCL" Name="exercicio2a.tcl"/>
-  <File Type="OPT-DCP" Name="exercicio2a_opt.dcp"/>
-  <File Type="PWROPT-DRC" Name="exercicio2a_drc_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="exercicio2a_placed.dcp"/>
-  <File Type="PLACE-IO" Name="exercicio2a_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="exercicio2a_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="exercicio2a_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="exercicio2a_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="exercicio2a_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="exercicio2a_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="exercicio2a_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="exercicio2a_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="exercicio2a_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="exercicio2a_drc_physopted.rpt"/>
-  <File Type="ROUTE-DCP" Name="exercicio2a_routed.dcp"/>
-  <File Type="ROUTE-DRC" Name="exercicio2a_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="exercicio2a_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="exercicio2a_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="exercicio2a_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="exercicio2a_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="exercicio2a_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="exercicio2a_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="exercicio2a_incremental_reuse_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="exercicio2a_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="exercicio2a_timing_summary_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="exercicio2a.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="exercicio2a_timing_summary_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="exercicio2a.bit"/>
-  <File Type="BG-BIN" Name="exercicio2a.bin"/>
-  <File Type="BITSTR-MSK" Name="exercicio2a.msk"/>
-  <File Type="BITSTR-RBT" Name="exercicio2a.rbt"/>
-  <File Type="BITSTR-NKY" Name="exercicio2a.nky"/>
-  <File Type="BITSTR-BMM" Name="exercicio2a_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="exercicio2a.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="C:/Users/15.83119-0/Documents/rodrigo/Aula2/aula2/aula2.sdk/SDK/SDK_Export/hw/exercicio2a.sysdef"/>
-  <File Type="BG-BGN" Name="exercicio2a.bgn"/>
-  <File Type="BG-DRC" Name="exercicio2a.drc"/>
+  <File Type="OPT-DRC" Name="Exercicio1_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Exercicio1_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="Exercicio1.tcl"/>
+  <File Type="OPT-DCP" Name="Exercicio1_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Exercicio1_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Exercicio1_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Exercicio1_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Exercicio1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Exercicio1_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Exercicio1_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Exercicio1_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Exercicio1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Exercicio1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Exercicio1_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Exercicio1_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Exercicio1_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="Exercicio1_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="Exercicio1_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Exercicio1_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Exercicio1_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Exercicio1_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Exercicio1_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Exercicio1_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Exercicio1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Exercicio1_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Exercicio1_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Exercicio1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="Exercicio1.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Exercicio1_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Exercicio1.bit"/>
+  <File Type="BG-BIN" Name="Exercicio1.bin"/>
+  <File Type="BITSTR-MSK" Name="Exercicio1.msk"/>
+  <File Type="BITSTR-RBT" Name="Exercicio1.rbt"/>
+  <File Type="BITSTR-NKY" Name="Exercicio1.nky"/>
+  <File Type="BITSTR-BMM" Name="Exercicio1_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Exercicio1.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="$PPRDIR/../Aula4/Aula4.sdk/SDK/SDK_Export/hw/Exercicio1.sysdef"/>
+  <File Type="BG-BGN" Name="Exercicio1.bgn"/>
+  <File Type="BG-DRC" Name="Exercicio1.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Problemas/io_basico.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Logica-Programavel/Aulas/Problemas/io_basico.xdc"/>
+        <Attr Name="ImportTime" Val="1447104284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

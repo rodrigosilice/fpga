@@ -2,9 +2,9 @@
 # Vivado v2014.1 (64-bit)
 # SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
 # IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-# Start of session at: Mon Oct 26 21:48:10 2015
-# Process ID: 4588
-# Log file: C:/Users/15.83119-0/Documents/rodrigo/Aula2/aula2/aula2.runs/synth_1/exercicio2a.vds
-# Journal file: C:/Users/15.83119-0/Documents/rodrigo/Aula2/aula2/aula2.runs/synth_1\vivado.jou
+# Start of session at: Mon Nov 09 21:27:50 2015
+# Process ID: 1812
+# Log file: T:/Rodrigo/Aula4/Aula4.runs/synth_1/Exercicio1.vds
+# Journal file: T:/Rodrigo/Aula4/Aula4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source exercicio2a.tcl
+source Exercicio1.tcl

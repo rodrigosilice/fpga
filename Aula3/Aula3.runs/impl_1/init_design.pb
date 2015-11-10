@@ -10,7 +10,7 @@ a
 \
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-42default:defaultZ29-17
+52default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -53,6 +53,219 @@ AC:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/ConfigModes.xml2default:def
 ^
 1Inserted %s OBUFs to IO ports without IO buffers.101*opt2
 02default:defaultZ31-141
+è
+Parsing XDC File [%s]
+179*designutils2Y
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:defaultZ20-179
+Ô
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+92default:default8@Z12-1815
+Ë
+Command failed: %s
+69*common2A
+-'U9' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+142default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'U8' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+172default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'R7' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+202default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'R6' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+232default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'R5' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+262default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'V7' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+292default:default8@Z17-69
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+332default:default8@Z12-1815
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+362default:default8@Z12-1815
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+392default:default8@Z12-1815
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+422default:default8@Z12-1815
+Ë
+Command failed: %s
+69*common2A
+-'U2' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+442default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'T3' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+472default:default8@Z17-69
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+512default:default8@Z12-1815
+
+7Setting property '%s' is not allowed for GT terminals.
+1591*	planAhead2
+
+IOSTANDARD2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+542default:default8@Z12-1815
+Ë
+Command failed: %s
+69*common2A
+-'P3' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+562default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'P4' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+592default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'T8' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+662default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'V9' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+692default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'R8' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+722default:default8@Z17-69
+Ó
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+752default:default8@Z12-1411
+Ó
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+782default:default8@Z12-1411
+Ë
+Command failed: %s
+69*common2A
+-'T4' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+812default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'U7' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+842default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'U6' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+872default:default8@Z17-69
+Ë
+Command failed: %s
+69*common2A
+-'V4' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+902default:default8@Z17-69
+Ó
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+932default:default8@Z12-1411
+Ó
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+962default:default8@Z12-1411
+Ë
+Command failed: %s
+69*common2A
+-'R1' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+992default:default8@Z17-69
+Ô
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+1022default:default8@Z12-1411
+È
+Command failed: %s
+69*common2A
+-'U1' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+1052default:default8@Z17-69
+È
+Command failed: %s
+69*common2A
+-'R2' is not a valid site or package pin name.2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+1082default:default8@Z17-69
+Ô
+%Cannot set LOC property of ports, %s
+1411*	planAhead2.
+Site location is not valid2default:default2[
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:default2
+1112default:default8@Z12-1411
+ò
+Finished Parsing XDC File [%s]
+178*designutils2Y
+ET:/Rodrigo/Aula4/Aula4.srcs/constrs_1/imports/Problemas/io_basico.xdc2default:defaultZ20-178
 C
 Pushed %s inverter(s).
 98*opt2
@@ -67,9 +280,9 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
 00:00:102default:default2
-00:00:102default:default2
-583.8362default:default2
-395.9262default:defaultZ17-268
+00:00:112default:default2
+589.9922default:default2
+401.8592default:defaultZ17-268
 
 
 End Record

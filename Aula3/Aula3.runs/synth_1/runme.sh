@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log exercicio2a.vds -m64 -mode batch -messageDb vivado.pb -source exercicio2a.tcl
+EAStep vivado -log Exercicio1.vds -m64 -mode batch -messageDb vivado.pb -source Exercicio1.tcl
