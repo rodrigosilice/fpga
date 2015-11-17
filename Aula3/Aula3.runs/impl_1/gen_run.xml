@@ -3,9 +3,9 @@
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="PWROPT-DCP" Name="Exercicio1_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DRC" Name="Exercicio1_drc_opted.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Exercicio1_timing_summary_routed.pb"/>
   <File Type="PA-TCL" Name="Exercicio1.tcl"/>
+  <File Type="OPT-DRC" Name="Exercicio1_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="Exercicio1_opt.dcp"/>
   <File Type="PWROPT-DRC" Name="Exercicio1_drc_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Exercicio1_placed.dcp"/>
@@ -30,8 +30,8 @@
   <File Type="ROUTE-SIMILARITY" Name="Exercicio1_incremental_reuse_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Exercicio1_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Exercicio1_timing_summary_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="Exercicio1.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Exercicio1_timing_summary_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="Exercicio1.vdi"/>
   <File Type="BG-BIT" Name="Exercicio1.bit"/>
   <File Type="BG-BIN" Name="Exercicio1.bin"/>
   <File Type="BITSTR-MSK" Name="Exercicio1.msk"/>

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 09 21:55:05 2015
+# Process ID: 4532
+# Log file: T:/Rodrigo/Aula4/Aula4.runs/impl_2/Exercicio1.vdi
+# Journal file: T:/Rodrigo/Aula4/Aula4.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source Exercicio1.tcl -notrace

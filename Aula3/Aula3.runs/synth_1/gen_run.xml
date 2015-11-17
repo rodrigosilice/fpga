@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1447111669">
-  <File Type="RDS-UTIL-PB" Name="Exercicio1_utilization_synth.pb"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL" Name="Exercicio1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Exercicio1_utilization_synth.pb"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-UTIL" Name="Exercicio1_utilization_synth.rpt"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Exercicio1_timing_summary_synth.rpt"/>
   <File Type="PA-TCL" Name="Exercicio1.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Exercicio1_timing_summary_synth.rpt"/>
   <File Type="RDS-RDS" Name="Exercicio1.vds"/>
   <File Type="RDS-DCP" Name="Exercicio1.dcp"/>
   <File Type="VDS-TIMING-PB" Name="Exercicio1_timing_summary_synth.pb"/>

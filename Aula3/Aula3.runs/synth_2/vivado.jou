@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 16 20:00:36 2015
+# Process ID: 1872
+# Log file: T:/Rodrigo/fpga/Aula3/Aula3.runs/synth_2/Exercicio2.vds
+# Journal file: T:/Rodrigo/fpga/Aula3/Aula3.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source Exercicio2.tcl
