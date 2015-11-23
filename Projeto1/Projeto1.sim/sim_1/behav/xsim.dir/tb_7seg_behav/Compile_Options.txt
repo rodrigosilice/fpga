@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "tb_7seg_behav" --prj "T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj" "xil_defaultlib.tb_7seg" 

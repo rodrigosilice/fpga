@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Wed Nov 18 22:11:26 2015
+# Process ID: 8984
+# Log file: T:/Rodrigo/fpga/Projeto1/vivado.log
+# Journal file: T:/Rodrigo/fpga/Projeto1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {T:\Rodrigo\fpga\Projeto1\Projeto1.xpr}
+INFO: [Project 1-313] Project file moved from 'T:/Rodrigo/Projeto1' since last save.
+Scanning sources...
+Finished scanning sources
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd w ]
+add_files -fileset sim_1 T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj   xil_defaultlib.tb_7seg"
+Vivado Simulator 2014.1
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj xil_defaultlib.tb_7seg 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sources_1/new/Projeto1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-1412] syntax error near ; [T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd:62]
+ERROR: [VRFC 10-704] formal clk has no actual or default value [T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd:54]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd:18]
+INFO: [VRFC 10-240] VHDL file T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj   xil_defaultlib.tb_7seg"
+Vivado Simulator 2014.1
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj xil_defaultlib.tb_7seg 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sources_1/new/Projeto1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Projeto1 [\Projeto1(10000,100)\]
+Compiling architecture behavioral of entity xil_defaultlib.tb_7seg
+Built simulation snapshot tb_7seg_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "tb_7seg_behav -key {Behavioral:sim_1:Functional:tb_7seg} -tclbatch {tb_7seg.tcl} -log {tb_7seg_behav.log}"
+Vivado Simulator 2014.1
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'tb_7seg_behav' loaded.
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj   xil_defaultlib.tb_7seg"
+Vivado Simulator 2014.1
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot tb_7seg_behav --prj T:/Rodrigo/fpga/Projeto1/Projeto1.sim/sim_1/behav/tb_7seg.prj xil_defaultlib.tb_7seg 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sources_1/new/Projeto1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/Rodrigo/fpga/Projeto1/Projeto1.srcs/sim_1/new/TB_7seg.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Projeto1 [\Projeto1(10000,100)\]
+Compiling architecture behavioral of entity xil_defaultlib.tb_7seg
+Built simulation snapshot tb_7seg_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "tb_7seg_behav -key {Behavioral:sim_1:Functional:tb_7seg} -tclbatch {tb_7seg.tcl} -log {tb_7seg_behav.log}"
+Vivado Simulator 2014.1
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'tb_7seg_behav' loaded.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 22:27:29 2015...
