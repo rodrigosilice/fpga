@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Mon Nov 23 20:57:04 2015
+| Date         : Mon Nov 23 22:07:32 2015
 | Host         : J309-A2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_clock_utilization -file toplevel_clock_utilization_placed.rpt
 | Design       : toplevel
@@ -19,9 +19,10 @@ Table of Contents
 5. Details of I/O Clocks
 6. Details of Local Clocks
 7. Clock Regions : Key Resource Utilization
-8. Net wise resources used in clock region X0Y1
-9. Net wise resources used in clock region X1Y1
-10. Net wise resources used in clock region X1Y2
+8. Net wise resources used in clock region X1Y0
+9. Net wise resources used in clock region X0Y1
+10. Net wise resources used in clock region X1Y1
+11. Net wise resources used in clock region X1Y2
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -48,9 +49,9 @@ Table of Contents
 | Index | BUFG Cell                                             | Net Name                                                           | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
 +-------+-------------------------------------------------------+--------------------------------------------------------------------+------+-------+--------+---------------+-----------+
 |     1 | u1/microblazer_i/clk_wiz_1/U0/clkf_buf                | u1/microblazer_i/clk_wiz_1/U0/clkfbout_buf_microblazer_clk_wiz_1_0 |    1 |     1 |     no |         1.711 |     0.086 |
-|     2 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst   | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE                          |   41 |    19 |     no |         1.787 |     0.169 |
-|     3 | u1/microblazer_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK                            |  236 |    63 |     no |         1.868 |     0.244 |
-|     4 | u1/microblazer_i/clk_wiz_1/U0/clkout1_buf             | u1/microblazer_i/clk_wiz_1/U0/clk_out1                             | 1170 |   362 |     no |         1.889 |     0.303 |
+|     2 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst   | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE                          |   41 |    24 |     no |         1.784 |     0.167 |
+|     3 | u1/microblazer_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK                            |  236 |    66 |     no |         1.824 |     0.201 |
+|     4 | u1/microblazer_i/clk_wiz_1/U0/clkout1_buf             | u1/microblazer_i/clk_wiz_1/U0/clk_out1                             | 1170 |   359 |     no |         2.012 |     0.426 |
 +-------+-------------------------------------------------------+--------------------------------------------------------------------+------+-------+--------+---------------+-----------+
 
 
@@ -76,6 +77,62 @@ Table of Contents
 6. Details of Local Clocks
 --------------------------
 
++-------+------------------------------------+---------------------------------------+--------------+--------+---------------+-----------+
+|       |                                    |                                       |   Num Loads  |        |               |           |
++-------+------------------------------------+---------------------------------------+------+-------+--------+---------------+-----------+
+| Index | Local Clk Src                      | Net Name                              | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+------------------------------------+---------------------------------------+------+-------+--------+---------------+-----------+
+|     1 | gen_deb[1].u2/trans_reg_i_2__0     | gen_deb[1].u2/n_0_trans_reg_i_2__0    |    1 |     1 |     no |         1.100 |     0.101 |
+|     2 | gen_deb[15].u2/trans_reg_i_2__14   | gen_deb[15].u2/n_0_trans_reg_i_2__14  |    1 |     1 |     no |         1.138 |     0.109 |
+|     3 | gen_deb[14].u2/trans_reg_i_2__13   | gen_deb[14].u2/n_0_trans_reg_i_2__13  |    1 |     1 |     no |         1.141 |     0.109 |
+|     4 | gen_deb[5].u2/trans_reg_i_2__4     | gen_deb[5].u2/n_0_trans_reg_i_2__4    |    1 |     1 |     no |         1.144 |     0.109 |
+|     5 | gen_deb[3].u2/trans_reg_i_2__2     | gen_deb[3].u2/n_0_trans_reg_i_2__2    |    1 |     1 |     no |         1.144 |     0.109 |
+|     6 | gen_deb[4].u2/trans_reg_i_2__3     | gen_deb[4].u2/n_0_trans_reg_i_2__3    |    1 |     1 |     no |         0.711 |     0.082 |
+|     7 | gen_deb[11].u2/trans_reg_i_2__10   | gen_deb[11].u2/n_0_trans_reg_i_2__10  |    1 |     1 |     no |         0.711 |     0.082 |
+|     8 | gen_deb[13].u2/trans_reg_i_2__12   | gen_deb[13].u2/n_0_trans_reg_i_2__12  |    1 |     1 |     no |         1.144 |     0.109 |
+|     9 | gen_deb[2].u2/trans_reg_i_2__1     | gen_deb[2].u2/n_0_trans_reg_i_2__1    |    1 |     1 |     no |         1.141 |     0.109 |
+|    10 | gen_deb[12].u2/trans_reg_i_2__11   | gen_deb[12].u2/n_0_trans_reg_i_2__11  |    1 |     1 |     no |         0.851 |     0.089 |
+|    11 | gen_deb[0].u2/trans_reg_i_2        | gen_deb[0].u2/n_0_trans_reg_i_2       |    1 |     1 |     no |         0.644 |     0.049 |
+|    12 | gen_deb[7].u2/trans_reg_i_2__6     | gen_deb[7].u2/n_0_trans_reg_i_2__6    |    1 |     1 |     no |         1.270 |     0.110 |
+|    13 | gen_deb[10].u2/trans_reg_i_2__9    | gen_deb[10].u2/n_0_trans_reg_i_2__9   |    1 |     1 |     no |         1.270 |     0.110 |
+|    14 | gen_deb[9].u2/trans_reg_i_2__8     | gen_deb[9].u2/n_0_trans_reg_i_2__8    |    1 |     1 |     no |         0.711 |     0.082 |
+|    15 | gen_deb[8].u2/trans_reg_i_2__7     | gen_deb[8].u2/n_0_trans_reg_i_2__7    |    1 |     1 |     no |         1.141 |     0.109 |
+|    16 | gen_deb[6].u2/trans_reg_i_2__5     | gen_deb[6].u2/n_0_trans_reg_i_2__5    |    1 |     1 |     no |         0.711 |     0.082 |
+|    17 | gen_deb[6].u2/btn_out_reg_i_1__5   | gen_deb[6].u2/trans1                  |    6 |     3 |     no |         0.796 |     0.544 |
+|    18 | gen_deb[1].u2/btn_out_reg_i_1__0   | gen_deb[1].u2/trans1                  |    6 |     3 |     no |         0.800 |     0.241 |
+|    19 | gen_deb[12].u2/btn_out_reg_i_1__11 | gen_deb[12].u2/trans1                 |    6 |     3 |     no |         0.788 |     0.400 |
+|    20 | gen_deb[9].u2/btn_out_reg_i_1__8   | gen_deb[9].u2/trans1                  |    6 |     3 |     no |         0.684 |     0.150 |
+|    21 | gen_deb[3].u2/btn_out_reg_i_1__2   | gen_deb[3].u2/trans1                  |    6 |     4 |     no |         0.817 |     0.433 |
+|    22 | gen_deb[2].u2/btn_out_reg_i_1__1   | gen_deb[2].u2/trans1                  |    6 |     4 |     no |         0.656 |     0.272 |
+|    23 | gen_deb[7].u2/btn_out_reg_i_1__6   | gen_deb[7].u2/trans1                  |    6 |     3 |     no |         0.885 |     0.497 |
+|    24 | gen_deb[14].u2/btn_out_reg_i_1__13 | gen_deb[14].u2/trans1                 |    6 |     3 |     no |         0.805 |     0.245 |
+|    25 | gen_deb[0].u2/btn_out_reg_i_1      | gen_deb[0].u2/trans1                  |    6 |     4 |     no |         0.813 |     0.407 |
+|    26 | gen_deb[11].u2/btn_out_reg_i_1__10 | gen_deb[11].u2/trans1                 |    6 |     3 |     no |         0.636 |     0.075 |
+|    27 | gen_deb[5].u2/btn_out_reg_i_1__4   | gen_deb[5].u2/trans1                  |    6 |     4 |     no |         0.738 |     0.350 |
+|    28 | gen_deb[4].u2/btn_out_reg_i_1__3   | gen_deb[4].u2/trans1                  |    6 |     4 |     no |         0.829 |     0.381 |
+|    29 | gen_deb[8].u2/btn_out_reg_i_1__7   | gen_deb[8].u2/trans1                  |    6 |     4 |     no |         0.805 |     0.553 |
+|    30 | gen_deb[13].u2/btn_out_reg_i_1__12 | gen_deb[13].u2/trans1                 |    6 |     3 |     no |         0.936 |     0.666 |
+|    31 | gen_deb[10].u2/btn_out_reg_i_1__9  | gen_deb[10].u2/trans1                 |    6 |     3 |     no |         0.885 |     0.497 |
+|    32 | gen_deb[15].u2/btn_out_reg_i_1__14 | gen_deb[15].u2/trans1                 |    6 |     3 |     no |         0.930 |     0.366 |
+|    33 | gen_deb[7].u2/cnt_reg[6]_i_2__6    | gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6   |    7 |     2 |     no |         0.685 |     0.189 |
+|    34 | gen_deb[5].u2/cnt_reg[6]_i_2__4    | gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4   |    7 |     3 |     no |         0.693 |     0.062 |
+|    35 | gen_deb[15].u2/cnt_reg[6]_i_2__14  | gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14 |    7 |     2 |     no |         0.545 |     0.082 |
+|    36 | gen_deb[10].u2/cnt_reg[6]_i_2__9   | gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9  |    7 |     3 |     no |         0.685 |     0.189 |
+|    37 | gen_deb[9].u2/cnt_reg[6]_i_2__8    | gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8   |    7 |     2 |     no |         0.505 |     0.042 |
+|    38 | gen_deb[6].u2/cnt_reg[6]_i_2__5    | gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5   |    7 |     3 |     no |         0.693 |     0.127 |
+|    39 | gen_deb[4].u2/cnt_reg[6]_i_2__3    | gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3   |    7 |     2 |     no |         0.644 |     0.049 |
+|    40 | gen_deb[12].u2/cnt_reg[6]_i_2__11  | gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11 |    7 |     2 |     no |         0.645 |     0.182 |
+|    41 | gen_deb[11].u2/cnt_reg[6]_i_2__10  | gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10 |    7 |     2 |     no |         0.545 |     0.082 |
+|    42 | gen_deb[3].u2/cnt_reg[6]_i_2__2    | gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2   |    7 |     2 |     no |         0.505 |     0.042 |
+|    43 | gen_deb[2].u2/cnt_reg[6]_i_2__1    | gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1   |    7 |     2 |     no |         0.762 |     0.174 |
+|    44 | gen_deb[8].u2/cnt_reg[6]_i_2__7    | gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7   |    7 |     2 |     no |         0.933 |     0.102 |
+|    45 | gen_deb[1].u2/cnt_reg[6]_i_2__0    | gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0   |    7 |     2 |     no |         0.505 |     0.042 |
+|    46 | gen_deb[14].u2/cnt_reg[6]_i_2__13  | gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13 |    7 |     2 |     no |         0.545 |     0.082 |
+|    47 | gen_deb[13].u2/cnt_reg[6]_i_2__12  | gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12 |    7 |     3 |     no |         0.684 |     0.270 |
+|    48 | gen_deb[0].u2/cnt_reg[6]_i_2       | gen_deb[0].u2/n_0_cnt_reg[6]_i_2      |    7 |     3 |     no |         0.872 |     0.236 |
++-------+------------------------------------+---------------------------------------+------+-------+--------+---------------+-----------+
+
+
 7. Clock Regions : Key Resource Utilization
 -------------------------------------------
 
@@ -85,9 +142,9 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 12000 |    0 |  2200 |    0 |    40 |    0 |    20 |    0 |    40 |
-| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   29 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1188 | 15200 |  227 |  2600 |    0 |    60 |    2 |    30 |    0 |    40 |
+| X1Y0              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    8 | 12000 |    0 |  2200 |    0 |    40 |    0 |    20 |    0 |    40 |
+| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   40 | 16000 |   14 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1313 | 15200 |  213 |  2600 |    0 |    60 |    2 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 15200 |    0 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
@@ -96,31 +153,40 @@ Table of Contents
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
 
-8. Net wise resources used in clock region X0Y1
+8. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+| Source Type | BUFHCE Site | Locked | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |             Clock Net Name             |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |   8 |     0 |        0 | u1/microblazer_i/clk_wiz_1/U0/clk_out1 |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+
+
+9. Net wise resources used in clock region X0Y1
 -----------------------------------------------
 
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
 | Source Type | BUFHCE Site | Locked | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |               Clock Net Name              |
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |   2 |     0 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE |
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |   7 |     0 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK   |
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |  20 |     0 |        0 | u1/microblazer_i/clk_wiz_1/U0/clk_out1    |
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |  10 |     0 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE |
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |  23 |    14 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK   |
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
 
 
-9. Net wise resources used in clock region X1Y1
------------------------------------------------
+10. Net wise resources used in clock region X1Y1
+------------------------------------------------
 
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
 | Source Type | BUFHCE Site | Locked | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |               Clock Net Name              |
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |  38 |     0 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE |
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 | 211 |    18 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK   |
-| BUFG        |     ---     |   no   |         0 |        0 |       0 |         4 |       0 |       0 | 939 |   209 |        0 | u1/microblazer_i/clk_wiz_1/U0/clk_out1    |
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |  30 |     0 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE |
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 | 195 |     4 |        0 | u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK   |
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         4 |       0 |       0 | 951 |   209 |        0 | u1/microblazer_i/clk_wiz_1/U0/clk_out1    |
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------+
 
 
-10. Net wise resources used in clock region X1Y2
+11. Net wise resources used in clock region X1Y2
 ------------------------------------------------
 
 +-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------+
@@ -174,4 +240,340 @@ resize_pblock [get_pblocks CLKAG_u1/microblazer_i/mdm_1/U0/Ext_JTAG_UPDATE] -add
 create_pblock CLKAG_u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK
 add_cells_to_pblock [get_pblocks  CLKAG_u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK"}]]]
 resize_pblock [get_pblocks CLKAG_u1/microblazer_i/mdm_1/U0/Ext_JTAG_DRCK] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8" driven by instance "gen_deb[9].u2/cnt_reg[6]_i_2__8" located at site "SLICE_X73Y82"
+#startgroup
+create_pblock CLKAG_gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6" driven by instance "gen_deb[7].u2/cnt_reg[6]_i_2__6" located at site "SLICE_X81Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[6].u2/trans1" driven by instance "gen_deb[6].u2/btn_out_reg_i_1__5" located at site "SLICE_X63Y72"
+#startgroup
+create_pblock CLKAG_gen_deb[6].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[6].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[6].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[6].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[5].u2/n_0_trans_reg_i_2__4" driven by instance "gen_deb[5].u2/trans_reg_i_2__4" located at site "SLICE_X74Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[5].u2/n_0_trans_reg_i_2__4
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[5].u2/n_0_trans_reg_i_2__4] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[5].u2/n_0_trans_reg_i_2__4"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[5].u2/n_0_trans_reg_i_2__4] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4" driven by instance "gen_deb[5].u2/cnt_reg[6]_i_2__4" located at site "SLICE_X72Y73"
+#startgroup
+create_pblock CLKAG_gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[4].u2/n_0_trans_reg_i_2__3" driven by instance "gen_deb[4].u2/trans_reg_i_2__3" located at site "SLICE_X77Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[4].u2/n_0_trans_reg_i_2__3
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[4].u2/n_0_trans_reg_i_2__3] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[4].u2/n_0_trans_reg_i_2__3"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[4].u2/n_0_trans_reg_i_2__3] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[1].u2/n_0_trans_reg_i_2__0" driven by instance "gen_deb[1].u2/trans_reg_i_2__0" located at site "SLICE_X68Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[1].u2/n_0_trans_reg_i_2__0
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[1].u2/n_0_trans_reg_i_2__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[1].u2/n_0_trans_reg_i_2__0"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[1].u2/n_0_trans_reg_i_2__0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[1].u2/trans1" driven by instance "gen_deb[1].u2/btn_out_reg_i_1__0" located at site "SLICE_X65Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[1].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[1].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[1].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[1].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14" driven by instance "gen_deb[15].u2/cnt_reg[6]_i_2__14" located at site "SLICE_X51Y76"
+#startgroup
+create_pblock CLKAG_gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[12].u2/n_0_trans_reg_i_2__11" driven by instance "gen_deb[12].u2/trans_reg_i_2__11" located at site "SLICE_X82Y68"
+#startgroup
+create_pblock CLKAG_gen_deb[12].u2/n_0_trans_reg_i_2__11
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[12].u2/n_0_trans_reg_i_2__11] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[12].u2/n_0_trans_reg_i_2__11"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[12].u2/n_0_trans_reg_i_2__11] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[12].u2/trans1" driven by instance "gen_deb[12].u2/btn_out_reg_i_1__11" located at site "SLICE_X83Y66"
+#startgroup
+create_pblock CLKAG_gen_deb[12].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[12].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[12].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[12].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9" driven by instance "gen_deb[10].u2/cnt_reg[6]_i_2__9" located at site "SLICE_X81Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[11].u2/n_0_trans_reg_i_2__10" driven by instance "gen_deb[11].u2/trans_reg_i_2__10" located at site "SLICE_X81Y81"
+#startgroup
+create_pblock CLKAG_gen_deb[11].u2/n_0_trans_reg_i_2__10
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[11].u2/n_0_trans_reg_i_2__10] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[11].u2/n_0_trans_reg_i_2__10"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[11].u2/n_0_trans_reg_i_2__10] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[9].u2/n_0_trans_reg_i_2__8" driven by instance "gen_deb[9].u2/trans_reg_i_2__8" located at site "SLICE_X73Y83"
+#startgroup
+create_pblock CLKAG_gen_deb[9].u2/n_0_trans_reg_i_2__8
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[9].u2/n_0_trans_reg_i_2__8] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[9].u2/n_0_trans_reg_i_2__8"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[9].u2/n_0_trans_reg_i_2__8] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[9].u2/trans1" driven by instance "gen_deb[9].u2/btn_out_reg_i_1__8" located at site "SLICE_X73Y82"
+#startgroup
+create_pblock CLKAG_gen_deb[9].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[9].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[9].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[9].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[6].u2/n_0_trans_reg_i_2__5" driven by instance "gen_deb[6].u2/trans_reg_i_2__5" located at site "SLICE_X65Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[6].u2/n_0_trans_reg_i_2__5
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[6].u2/n_0_trans_reg_i_2__5] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[6].u2/n_0_trans_reg_i_2__5"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[6].u2/n_0_trans_reg_i_2__5] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5" driven by instance "gen_deb[6].u2/cnt_reg[6]_i_2__5" located at site "SLICE_X64Y72"
+#startgroup
+create_pblock CLKAG_gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3" driven by instance "gen_deb[4].u2/cnt_reg[6]_i_2__3" located at site "SLICE_X73Y68"
+#startgroup
+create_pblock CLKAG_gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[3].u2/n_0_trans_reg_i_2__2" driven by instance "gen_deb[3].u2/trans_reg_i_2__2" located at site "SLICE_X76Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[3].u2/n_0_trans_reg_i_2__2
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[3].u2/n_0_trans_reg_i_2__2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[3].u2/n_0_trans_reg_i_2__2"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[3].u2/n_0_trans_reg_i_2__2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[3].u2/trans1" driven by instance "gen_deb[3].u2/btn_out_reg_i_1__2" located at site "SLICE_X73Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[3].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[3].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[3].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[3].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[2].u2/n_0_trans_reg_i_2__1" driven by instance "gen_deb[2].u2/trans_reg_i_2__1" located at site "SLICE_X70Y72"
+#startgroup
+create_pblock CLKAG_gen_deb[2].u2/n_0_trans_reg_i_2__1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[2].u2/n_0_trans_reg_i_2__1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[2].u2/n_0_trans_reg_i_2__1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[2].u2/n_0_trans_reg_i_2__1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[2].u2/trans1" driven by instance "gen_deb[2].u2/btn_out_reg_i_1__1" located at site "SLICE_X69Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[2].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[2].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[2].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[2].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11" driven by instance "gen_deb[12].u2/cnt_reg[6]_i_2__11" located at site "SLICE_X83Y66"
+#startgroup
+create_pblock CLKAG_gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10" driven by instance "gen_deb[11].u2/cnt_reg[6]_i_2__10" located at site "SLICE_X81Y82"
+#startgroup
+create_pblock CLKAG_gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[8].u2/n_0_trans_reg_i_2__7" driven by instance "gen_deb[8].u2/trans_reg_i_2__7" located at site "SLICE_X56Y75"
+#startgroup
+create_pblock CLKAG_gen_deb[8].u2/n_0_trans_reg_i_2__7
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[8].u2/n_0_trans_reg_i_2__7] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[8].u2/n_0_trans_reg_i_2__7"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[8].u2/n_0_trans_reg_i_2__7] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[8].u2/trans1" driven by instance "gen_deb[8].u2/btn_out_reg_i_1__7" located at site "SLICE_X57Y77"
+#startgroup
+create_pblock CLKAG_gen_deb[8].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[8].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[8].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[8].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[7].u2/trans1" driven by instance "gen_deb[7].u2/btn_out_reg_i_1__6" located at site "SLICE_X81Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[7].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[7].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[7].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[7].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2" driven by instance "gen_deb[3].u2/cnt_reg[6]_i_2__2" located at site "SLICE_X73Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1" driven by instance "gen_deb[2].u2/cnt_reg[6]_i_2__1" located at site "SLICE_X70Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0" driven by instance "gen_deb[1].u2/cnt_reg[6]_i_2__0" located at site "SLICE_X65Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[15].u2/n_0_trans_reg_i_2__14" driven by instance "gen_deb[15].u2/trans_reg_i_2__14" located at site "SLICE_X54Y76"
+#startgroup
+create_pblock CLKAG_gen_deb[15].u2/n_0_trans_reg_i_2__14
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[15].u2/n_0_trans_reg_i_2__14] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[15].u2/n_0_trans_reg_i_2__14"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[15].u2/n_0_trans_reg_i_2__14] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[14].u2/n_0_trans_reg_i_2__13" driven by instance "gen_deb[14].u2/trans_reg_i_2__13" located at site "SLICE_X56Y76"
+#startgroup
+create_pblock CLKAG_gen_deb[14].u2/n_0_trans_reg_i_2__13
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[14].u2/n_0_trans_reg_i_2__13] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[14].u2/n_0_trans_reg_i_2__13"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[14].u2/n_0_trans_reg_i_2__13] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[14].u2/trans1" driven by instance "gen_deb[14].u2/btn_out_reg_i_1__13" located at site "SLICE_X57Y78"
+#startgroup
+create_pblock CLKAG_gen_deb[14].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[14].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[14].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[14].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[13].u2/n_0_trans_reg_i_2__12" driven by instance "gen_deb[13].u2/trans_reg_i_2__12" located at site "SLICE_X66Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[13].u2/n_0_trans_reg_i_2__12
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[13].u2/n_0_trans_reg_i_2__12] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[13].u2/n_0_trans_reg_i_2__12"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[13].u2/n_0_trans_reg_i_2__12] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[0].u2/trans1" driven by instance "gen_deb[0].u2/btn_out_reg_i_1" located at site "SLICE_X67Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[0].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[0].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[0].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[0].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[0].u2/n_0_trans_reg_i_2" driven by instance "gen_deb[0].u2/trans_reg_i_2" located at site "SLICE_X68Y69"
+#startgroup
+create_pblock CLKAG_gen_deb[0].u2/n_0_trans_reg_i_2
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[0].u2/n_0_trans_reg_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[0].u2/n_0_trans_reg_i_2"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[0].u2/n_0_trans_reg_i_2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[11].u2/trans1" driven by instance "gen_deb[11].u2/btn_out_reg_i_1__10" located at site "SLICE_X81Y82"
+#startgroup
+create_pblock CLKAG_gen_deb[11].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[11].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[11].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[11].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7" driven by instance "gen_deb[8].u2/cnt_reg[6]_i_2__7" located at site "SLICE_X56Y77"
+#startgroup
+create_pblock CLKAG_gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[7].u2/n_0_trans_reg_i_2__6" driven by instance "gen_deb[7].u2/trans_reg_i_2__6" located at site "SLICE_X82Y71"
+#startgroup
+create_pblock CLKAG_gen_deb[7].u2/n_0_trans_reg_i_2__6
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[7].u2/n_0_trans_reg_i_2__6] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[7].u2/n_0_trans_reg_i_2__6"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[7].u2/n_0_trans_reg_i_2__6] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[5].u2/trans1" driven by instance "gen_deb[5].u2/btn_out_reg_i_1__4" located at site "SLICE_X73Y73"
+#startgroup
+create_pblock CLKAG_gen_deb[5].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[5].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[5].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[5].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[4].u2/trans1" driven by instance "gen_deb[4].u2/btn_out_reg_i_1__3" located at site "SLICE_X73Y69"
+#startgroup
+create_pblock CLKAG_gen_deb[4].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[4].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[4].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[4].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[15].u2/trans1" driven by instance "gen_deb[15].u2/btn_out_reg_i_1__14" located at site "SLICE_X51Y76"
+#startgroup
+create_pblock CLKAG_gen_deb[15].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[15].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[15].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[15].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13" driven by instance "gen_deb[14].u2/cnt_reg[6]_i_2__13" located at site "SLICE_X57Y78"
+#startgroup
+create_pblock CLKAG_gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12" driven by instance "gen_deb[13].u2/cnt_reg[6]_i_2__12" located at site "SLICE_X59Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[13].u2/trans1" driven by instance "gen_deb[13].u2/btn_out_reg_i_1__12" located at site "SLICE_X58Y73"
+#startgroup
+create_pblock CLKAG_gen_deb[13].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[13].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[13].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[13].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[0].u2/n_0_cnt_reg[6]_i_2" driven by instance "gen_deb[0].u2/cnt_reg[6]_i_2" located at site "SLICE_X67Y70"
+#startgroup
+create_pblock CLKAG_gen_deb[0].u2/n_0_cnt_reg[6]_i_2
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[0].u2/n_0_cnt_reg[6]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[0].u2/n_0_cnt_reg[6]_i_2"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[0].u2/n_0_cnt_reg[6]_i_2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[10].u2/trans1" driven by instance "gen_deb[10].u2/btn_out_reg_i_1__9" located at site "SLICE_X81Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[10].u2/trans1
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[10].u2/trans1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[10].u2/trans1"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[10].u2/trans1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "gen_deb[10].u2/n_0_trans_reg_i_2__9" driven by instance "gen_deb[10].u2/trans_reg_i_2__9" located at site "SLICE_X82Y74"
+#startgroup
+create_pblock CLKAG_gen_deb[10].u2/n_0_trans_reg_i_2__9
+add_cells_to_pblock [get_pblocks  CLKAG_gen_deb[10].u2/n_0_trans_reg_i_2__9] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gen_deb[10].u2/n_0_trans_reg_i_2__9"}]]]
+resize_pblock [get_pblocks CLKAG_gen_deb[10].u2/n_0_trans_reg_i_2__9] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup

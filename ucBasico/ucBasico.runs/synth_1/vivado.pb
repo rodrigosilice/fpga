@@ -30,7 +30,7 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 284.211 ; gain = 148.824
+xStarting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 284.664 ; gain = 149.871
 2default:default
 ƒ
 synthesizing module '%s'638*oasys2
@@ -45,7 +45,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 u12default:default2'
 microblazer_wrapper2default:default2W
 AT:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd2default:default2
-562default:default8@Z8-3491
+792default:default8@Z8-3491
 È
 synthesizing module '%s'638*oasys2'
 microblazer_wrapper2default:default2q
@@ -18914,16 +18914,179 @@ ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer
 12default:default2q
 [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd2default:default2
 232default:default8@Z8-256
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+Ê
+synthesizing module '%s'638*oasys2,
+debounce__parameterized02default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+172default:default8@Z8-638
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+Ä
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+trans2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+252default:default8@Z8-614
+Å
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+btn_in2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+252default:default8@Z8-614
+˛
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+cnt2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+252default:default8@Z8-614
+¢
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+debounce__parameterized02default:default2
+922default:default2
+12default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+172default:default8@Z8-256
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter fclk bound to: 10000 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter tdb bound to: 10 - type: integer 
+2default:default
 Ä
 %done synthesizing module '%s' (%s#%s)256*oasys2
 toplevel2default:default2
-922default:default2
+932default:default2
 12default:default2W
 AT:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd2default:default2
 412default:default8@Z8-256
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 542.223 ; gain = 406.836
+xFinished RTL Elaboration : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 541.809 ; gain = 407.016
 2default:default
 ;
 %s*synth2,
@@ -19222,15 +19385,15 @@ PT:/Rodrigo/fpga/ucBasico/ucBasico.srcs/constrs_1/imports/Problemas/io_basico.xd
 2default:defaultZ1-111
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:47 ; elapsed = 00:01:54 . Memory (MB): peak = 647.305 ; gain = 511.918
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 2default:default
 µ
 %s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 647.305 ; gain = 511.918
+êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 2default:default
 ù
 %s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 647.305 ; gain = 511.918
+yFinished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 2default:default
 ≤
 merging register '%s' into '%s'3619*oasys2"
@@ -19310,6 +19473,21 @@ pt:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/microblaze
 from_sys_reg2default:default2ë
 {t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/51a8c173/hdl/src/vhdl/sequence.vhd2default:default2
 2222default:default8@Z8-4471
+‚
+!inferring latch for variable '%s'327*oasys2
+btn_out_reg2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+352default:default8@Z8-327
+ﬁ
+!inferring latch for variable '%s'327*oasys2
+cnt_reg2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+362default:default8@Z8-327
+‡
+!inferring latch for variable '%s'327*oasys2
+	trans_reg2default:default2i
+ST:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd2default:default2
+282default:default8@Z8-327
 <
 %s*synth2-
 
@@ -19351,6 +19529,10 @@ Q
 Q
 %s*synth2B
 .	   2 Input      8 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 16    
 2default:default
 Q
 %s*synth2B
@@ -19498,6 +19680,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      7 Bit        Muxes := 16    
+2default:default
+Q
+%s*synth2B
 .	   2 Input      6 Bit        Muxes := 2     
 2default:default
 Q
@@ -19514,19 +19700,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      2 Bit        Muxes := 15    
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 1     
+.	   4 Input      2 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -19534,11 +19712,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 286   
+.	   3 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 1     
+.	  16 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 318   
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -21425,6 +21611,34 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+D
+%s*synth25
+!Module debounce__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
 z
 %s*synth2k
 WPart Resources:
@@ -21857,7 +22071,7 @@ R\inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_amesg_i_reg[4
 1002default:defaultZ17-14
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 669.508 ; gain = 534.121
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 669.871 ; gain = 535.078
 2default:default
 ¢
 %s*synth2í
@@ -22161,23 +22375,23 @@ R-------------------------------------------------------------------------------
 2default:default
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 699.605 ; gain = 564.219
+zFinished Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:08 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ≠
 %s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 699.605 ; gain = 564.219
+àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 699.605 ; gain = 564.219
+|Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:09 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 699.605 ; gain = 564.219
+{Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+uFinished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ;
 %s*synth2,
@@ -22206,11 +22420,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ¢
 %s*synth2í
@@ -22286,27 +22500,27 @@ Report Cell Usage:
 2default:default
 ?
 %s*synth20
-|5     |LUT1       |    25|
+|5     |LUT1       |    41|
 2default:default
 ?
 %s*synth20
-|6     |LUT2       |   501|
+|6     |LUT2       |   533|
 2default:default
 ?
 %s*synth20
-|7     |LUT3       |   175|
+|7     |LUT3       |   207|
 2default:default
 ?
 %s*synth20
-|8     |LUT4       |   327|
+|8     |LUT4       |   343|
 2default:default
 ?
 %s*synth20
-|9     |LUT5       |   256|
+|9     |LUT5       |   288|
 2default:default
 ?
 %s*synth20
-|10    |LUT6       |   377|
+|10    |LUT6       |   457|
 2default:default
 ?
 %s*synth20
@@ -22402,11 +22616,19 @@ Report Cell Usage:
 2default:default
 ?
 %s*synth20
-|34    |IBUF       |    18|
+|34    |LD         |    16|
 2default:default
 ?
 %s*synth20
-|35    |OBUF       |    16|
+|35    |LDC        |   128|
+2default:default
+?
+%s*synth20
+|36    |IBUF       |    18|
+2default:default
+?
+%s*synth20
+|37    |OBUF       |    16|
 2default:default
 ?
 %s*synth20
@@ -22431,107 +22653,171 @@ l+------+----------------------------------------------------+------------------
 2default:default
 ê
 %s*synth2Ä
-l|1     |top                                                 |                                      |  7863|
+l|1     |top                                                 |                                      |  8215|
 2default:default
 ê
 %s*synth2Ä
-l|2     |  u1                                                |microblazer_wrapper                   |  7830|
+l|2     |  \gen_deb[0].u2                                    |debounce__parameterized0              |    22|
 2default:default
 ê
 %s*synth2Ä
-l|3     |    microblazer_i                                   |microblazer                           |  7829|
+l|3     |  \gen_deb[10].u2                                   |debounce__parameterized0_0            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|4     |      axi_gpio_LED                                  |microblazer_axi_gpio_0_0              |   232|
+l|4     |  \gen_deb[11].u2                                   |debounce__parameterized0_1            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|5     |        U0                                          |axi_gpio__parameterized0              |   232|
+l|5     |  \gen_deb[12].u2                                   |debounce__parameterized0_2            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|6     |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync__1                           |    64|
+l|6     |  \gen_deb[13].u2                                   |debounce__parameterized0_3            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|7     |      axi_gpio_SW                                   |microblazer_axi_gpio_0_1              |   232|
+l|7     |  \gen_deb[14].u2                                   |debounce__parameterized0_4            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|8     |        U0                                          |axi_gpio__parameterized2              |   232|
+l|8     |  \gen_deb[15].u2                                   |debounce__parameterized0_5            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|9     |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync                              |    64|
+l|9     |  \gen_deb[1].u2                                    |debounce__parameterized0_6            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|10    |      clk_wiz_1                                     |microblazer_clk_wiz_1_0               |     4|
+l|10    |  \gen_deb[2].u2                                    |debounce__parameterized0_7            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|11    |        U0                                          |microblazer_clk_wiz_1_0_clk_wiz       |     4|
+l|11    |  \gen_deb[3].u2                                    |debounce__parameterized0_8            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|12    |      mdm_1                                         |microblazer_mdm_1_0                   |   382|
+l|12    |  \gen_deb[4].u2                                    |debounce__parameterized0_9            |    22|
 2default:default
 ê
 %s*synth2Ä
-l|13    |        U0                                          |MDM__parameterized0                   |   382|
+l|13    |  \gen_deb[5].u2                                    |debounce__parameterized0_10           |    22|
 2default:default
 ê
 %s*synth2Ä
-l|14    |      microblaze_0                                  |microblazer_microblaze_0_0            |  6582|
+l|14    |  \gen_deb[6].u2                                    |debounce__parameterized0_11           |    22|
 2default:default
 ê
 %s*synth2Ä
-l|15    |        U0                                          |MicroBlaze__parameterized0            |  6582|
+l|15    |  \gen_deb[7].u2                                    |debounce__parameterized0_12           |    22|
 2default:default
 ê
 %s*synth2Ä
-l|16    |      microblaze_0_axi_periph                       |microblazer_microblaze_0_axi_periph_0 |   311|
+l|16    |  \gen_deb[8].u2                                    |debounce__parameterized0_13           |    22|
 2default:default
 ê
 %s*synth2Ä
-l|17    |        xbar                                        |microblazer_xbar_0                    |   311|
+l|17    |  \gen_deb[9].u2                                    |debounce__parameterized0_14           |    22|
 2default:default
 ê
 %s*synth2Ä
-l|18    |      rst_clk_wiz_1_100M                            |microblazer_rst_clk_wiz_1_100M_0      |    64|
+l|18    |  u1                                                |microblazer_wrapper                   |  7830|
 2default:default
 ê
 %s*synth2Ä
-l|19    |      microblaze_0_local_memory                     |microblaze_0_local_memory_imp_Z0DGSF  |    20|
+l|19    |    microblazer_i                                   |microblazer                           |  7829|
 2default:default
 ê
 %s*synth2Ä
-l|20    |        dlmb_bram_if_cntlr                          |microblazer_dlmb_bram_if_cntlr_0      |     8|
+l|20    |      axi_gpio_LED                                  |microblazer_axi_gpio_0_0              |   232|
 2default:default
 ê
 %s*synth2Ä
-l|21    |        dlmb_v10                                    |microblazer_dlmb_v10_0                |     1|
+l|21    |        U0                                          |axi_gpio__parameterized0              |   232|
 2default:default
 ê
 %s*synth2Ä
-l|22    |          U0                                        |lmb_v10__parameterized0__1            |     1|
+l|22    |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync__1                           |    64|
 2default:default
 ê
 %s*synth2Ä
-l|23    |        ilmb_bram_if_cntlr                          |microblazer_ilmb_bram_if_cntlr_0      |     7|
+l|23    |      axi_gpio_SW                                   |microblazer_axi_gpio_0_1              |   232|
 2default:default
 ê
 %s*synth2Ä
-l|24    |        ilmb_v10                                    |microblazer_ilmb_v10_0                |     1|
+l|24    |        U0                                          |axi_gpio__parameterized2              |   232|
 2default:default
 ê
 %s*synth2Ä
-l|25    |          U0                                        |lmb_v10__parameterized0               |     1|
+l|25    |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync                              |    64|
 2default:default
 ê
 %s*synth2Ä
-l|26    |        lmb_bram                                    |microblazer_lmb_bram_0                |     2|
+l|26    |      clk_wiz_1                                     |microblazer_clk_wiz_1_0               |     4|
+2default:default
+ê
+%s*synth2Ä
+l|27    |        U0                                          |microblazer_clk_wiz_1_0_clk_wiz       |     4|
+2default:default
+ê
+%s*synth2Ä
+l|28    |      mdm_1                                         |microblazer_mdm_1_0                   |   382|
+2default:default
+ê
+%s*synth2Ä
+l|29    |        U0                                          |MDM__parameterized0                   |   382|
+2default:default
+ê
+%s*synth2Ä
+l|30    |      microblaze_0                                  |microblazer_microblaze_0_0            |  6582|
+2default:default
+ê
+%s*synth2Ä
+l|31    |        U0                                          |MicroBlaze__parameterized0            |  6582|
+2default:default
+ê
+%s*synth2Ä
+l|32    |      microblaze_0_axi_periph                       |microblazer_microblaze_0_axi_periph_0 |   311|
+2default:default
+ê
+%s*synth2Ä
+l|33    |        xbar                                        |microblazer_xbar_0                    |   311|
+2default:default
+ê
+%s*synth2Ä
+l|34    |      rst_clk_wiz_1_100M                            |microblazer_rst_clk_wiz_1_100M_0      |    64|
+2default:default
+ê
+%s*synth2Ä
+l|35    |      microblaze_0_local_memory                     |microblaze_0_local_memory_imp_Z0DGSF  |    20|
+2default:default
+ê
+%s*synth2Ä
+l|36    |        dlmb_bram_if_cntlr                          |microblazer_dlmb_bram_if_cntlr_0      |     8|
+2default:default
+ê
+%s*synth2Ä
+l|37    |        dlmb_v10                                    |microblazer_dlmb_v10_0                |     1|
+2default:default
+ê
+%s*synth2Ä
+l|38    |          U0                                        |lmb_v10__parameterized0__1            |     1|
+2default:default
+ê
+%s*synth2Ä
+l|39    |        ilmb_bram_if_cntlr                          |microblazer_ilmb_bram_if_cntlr_0      |     7|
+2default:default
+ê
+%s*synth2Ä
+l|40    |        ilmb_v10                                    |microblazer_ilmb_v10_0                |     1|
+2default:default
+ê
+%s*synth2Ä
+l|41    |          U0                                        |lmb_v10__parameterized0               |     1|
+2default:default
+ê
+%s*synth2Ä
+l|42    |        lmb_bram                                    |microblazer_lmb_bram_0                |     2|
 2default:default
 ê
 %s*synth2Ä
@@ -22539,29 +22825,24 @@ l+------+----------------------------------------------------+------------------
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 j
 %s*synth2[
-GSynthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+GSynthesis finished with 0 errors, 0 critical warnings and 25 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 2default:default
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-4142default:defaultZ29-17
+5582default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-ß
-æNetlist '%s' is not ideal for floorplanning, since the cellview '%s' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-310*netlist2
-toplevel2default:default2.
-MicroBlaze__parameterized02default:defaultZ29-101
 ^
 1Inserted %s IBUFs to IO ports without IO buffers.100*opt2
 02default:defaultZ31-140
@@ -22572,10 +22853,10 @@ D
 Pushed %s inverter(s).
 98*opt2
 122default:defaultZ31-138
-∂
+Ó
 !Unisim Transformation Summary:
-%s111*project2˘
-‰  A total of 328 instances were transformed.
+%s111*project2±
+ú  A total of 472 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 27 instances
   FD => FDRE: 32 instances
   FDC_1 => FDCE (inverted pins: C): 1 instances
@@ -22583,6 +22864,8 @@ D
   FDR => FDRE: 1 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instances
   FDS => FDSE: 5 instances
+  LD => LDCE: 16 instances
+  LDC => LDCE: 128 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 97 instances
   MULT_AND => LUT2: 3 instances
   MUXF5 => LUT3: 32 instances
@@ -22596,8 +22879,8 @@ L
 ø
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-6212default:default2
-132default:default2
+6232default:default2
+182default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -22608,15 +22891,15 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:02:062default:default2
-00:02:122default:default2
-699.6052default:default2
-464.3162default:defaultZ17-268
+00:02:072default:default2
+00:02:112default:default2
+699.5082default:default2
+464.4062default:defaultZ17-268
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 699.605 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 699.508 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Mon Nov 23 20:40:21 20152default:defaultZ17-206
+Mon Nov 23 22:06:47 20152default:defaultZ17-206

@@ -46,7 +46,7 @@ BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 §
 Parsing XDC File [%s]
 179*designutils2q
-]T:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-9656-J309-A2/dcp/toplevel_early.xdc2default:defaultZ20-179
+]T:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-4772-J309-A2/dcp/toplevel_early.xdc2default:defaultZ20-179
 á
 %Done setting XDC timing constraints.
 35*timing2„
@@ -58,8 +58,8 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 get_clocks: 2default:default2
 00:00:112default:default2
 00:00:112default:default2
-886.4842default:default2
-416.8872default:defaultZ17-268
+887.3012default:default2
+417.7972default:defaultZ17-268
 Ü
 Deriving generated clocks
 2*timing2Œ
@@ -68,15 +68,15 @@ vT:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/ip/microblazer_
 °
 Finished Parsing XDC File [%s]
 178*designutils2q
-]T:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-9656-J309-A2/dcp/toplevel_early.xdc2default:defaultZ20-178
+]T:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-4772-J309-A2/dcp/toplevel_early.xdc2default:defaultZ20-178
 ¡
 Parsing XDC File [%s]
 179*designutils2k
-WT:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-9656-J309-A2/dcp/toplevel.xdc2default:defaultZ20-179
+WT:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-4772-J309-A2/dcp/toplevel.xdc2default:defaultZ20-179
 ª
 Finished Parsing XDC File [%s]
 178*designutils2k
-WT:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-9656-J309-A2/dcp/toplevel.xdc2default:defaultZ20-178
+WT:/Rodrigo/fpga/ucBasico/ucBasico.runs/impl_1/.Xil/Vivado-4772-J309-A2/dcp/toplevel.xdc2default:defaultZ20-178
 6
 Reading XDEF placement.
 206*designutilsZ20-206
@@ -88,8 +88,8 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2$
 Read XDEF File: 2default:default2
 00:00:002default:default2 
-00:00:00.2162default:default2
-886.4842default:default2
+00:00:00.2342default:default2
+887.3012default:default2
 0.0002default:defaultZ17-268
 3
 Restoring placement.
@@ -97,9 +97,9 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 Û
 ORestored %s out of %s XDEF sites from archive | CPU: %s secs | Memory: %s MB |
 403*designutils2
-5222default:default2
-5222default:default2
-1.0000002default:default2
+6102default:default2
+6102default:default2
+0.0000002default:default2
 0.0000002default:defaultZ20-403
 C
 Pushed %s inverter(s).
@@ -121,8 +121,8 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 open_checkpoint: 2default:default2
 00:00:162default:default2
 00:00:172default:default2
-887.7542default:default2
-709.2852default:defaultZ17-268
+889.3482default:default2
+710.8792default:defaultZ17-268
 ›
 @Attempting to get a license for feature '%s' and/or device '%s'
 308*common2"
@@ -141,10 +141,10 @@ G
 Running DRC with %s threads
 24*drc2
 22default:defaultZ23-27
-]
+_
 DRC finished with %s
-1905*	planAhead2(
-0 Errors, 1 Warnings2default:defaultZ12-3199
+1905*	planAhead2*
+0 Errors, 102 Warnings2default:defaultZ12-3199
 `
 BPlease refer to the DRC report (report_drc) for more information.
 1906*	planAheadZ12-3200
@@ -188,9 +188,9 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 write_bitstream: 2default:default2
 00:00:252default:default2
-00:00:262default:default2
-1243.4962default:default2
-355.7422default:defaultZ17-268
+00:00:252default:default2
+1247.0002default:default2
+357.6522default:defaultZ17-268
 
 
 End Record

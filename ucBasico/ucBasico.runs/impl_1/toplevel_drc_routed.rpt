@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Mon Nov 23 20:57:40 2015
+| Date         : Mon Nov 23 22:08:06 2015
 | Host         : J309-A2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ REPORT SUMMARY
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 1
+         Violations found: 102
 
 2. REPORT DETAILS
 -----------------
@@ -37,6 +37,671 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+IOCS-1#1 Warning
+IOB clock sharing  
+IOs sw[11], sw[13] placed at T3, R3 connects to flops which are clocked by gen_deb[11].u2/trans1, gen_deb[13].u2/trans1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+IOCS-1#2 Warning
+IOB clock sharing  
+IOs sw[14], sw[15] placed at P3, P4 connects to flops which are clocked by gen_deb[14].u2/trans1, gen_deb[15].u2/trans1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+IOCS-1#3 Warning
+IOB clock sharing  
+IOs sw[4], sw[3] placed at R5, R6 connects to flops which are clocked by gen_deb[4].u2/trans1, gen_deb[3].u2/trans1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+IOCS-1#4 Warning
+IOB clock sharing  
+IOs sw[6], sw[5] placed at V6, V7 connects to flops which are clocked by gen_deb[6].u2/trans1, gen_deb[5].u2/trans1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+IOCS-1#5 Warning
+IOB clock sharing  
+IOs sw[9], sw[10] placed at V2, U2 connects to flops which are clocked by gen_deb[9].u2/trans1, gen_deb[10].u2/trans1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net gen_deb[0].u2/n_0_cnt_reg[6]_i_2 is a gated clock net sourced by a combinational pin gen_deb[0].u2/cnt_reg[6]_i_2/O, cell gen_deb[0].u2/cnt_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net gen_deb[0].u2/n_0_trans_reg_i_2 is a gated clock net sourced by a combinational pin gen_deb[0].u2/trans_reg_i_2/O, cell gen_deb[0].u2/trans_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net gen_deb[0].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[0].u2/btn_out_reg_i_1/O, cell gen_deb[0].u2/btn_out_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net gen_deb[10].u2/n_0_cnt_reg[6]_i_2__9 is a gated clock net sourced by a combinational pin gen_deb[10].u2/cnt_reg[6]_i_2__9/O, cell gen_deb[10].u2/cnt_reg[6]_i_2__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net gen_deb[10].u2/n_0_trans_reg_i_2__9 is a gated clock net sourced by a combinational pin gen_deb[10].u2/trans_reg_i_2__9/O, cell gen_deb[10].u2/trans_reg_i_2__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net gen_deb[10].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[10].u2/btn_out_reg_i_1__9/O, cell gen_deb[10].u2/btn_out_reg_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net gen_deb[11].u2/n_0_cnt_reg[6]_i_2__10 is a gated clock net sourced by a combinational pin gen_deb[11].u2/cnt_reg[6]_i_2__10/O, cell gen_deb[11].u2/cnt_reg[6]_i_2__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net gen_deb[11].u2/n_0_trans_reg_i_2__10 is a gated clock net sourced by a combinational pin gen_deb[11].u2/trans_reg_i_2__10/O, cell gen_deb[11].u2/trans_reg_i_2__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net gen_deb[11].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[11].u2/btn_out_reg_i_1__10/O, cell gen_deb[11].u2/btn_out_reg_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net gen_deb[12].u2/n_0_cnt_reg[6]_i_2__11 is a gated clock net sourced by a combinational pin gen_deb[12].u2/cnt_reg[6]_i_2__11/O, cell gen_deb[12].u2/cnt_reg[6]_i_2__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net gen_deb[12].u2/n_0_trans_reg_i_2__11 is a gated clock net sourced by a combinational pin gen_deb[12].u2/trans_reg_i_2__11/O, cell gen_deb[12].u2/trans_reg_i_2__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net gen_deb[12].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[12].u2/btn_out_reg_i_1__11/O, cell gen_deb[12].u2/btn_out_reg_i_1__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net gen_deb[13].u2/n_0_cnt_reg[6]_i_2__12 is a gated clock net sourced by a combinational pin gen_deb[13].u2/cnt_reg[6]_i_2__12/O, cell gen_deb[13].u2/cnt_reg[6]_i_2__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net gen_deb[13].u2/n_0_trans_reg_i_2__12 is a gated clock net sourced by a combinational pin gen_deb[13].u2/trans_reg_i_2__12/O, cell gen_deb[13].u2/trans_reg_i_2__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net gen_deb[13].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[13].u2/btn_out_reg_i_1__12/O, cell gen_deb[13].u2/btn_out_reg_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net gen_deb[14].u2/n_0_cnt_reg[6]_i_2__13 is a gated clock net sourced by a combinational pin gen_deb[14].u2/cnt_reg[6]_i_2__13/O, cell gen_deb[14].u2/cnt_reg[6]_i_2__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net gen_deb[14].u2/n_0_trans_reg_i_2__13 is a gated clock net sourced by a combinational pin gen_deb[14].u2/trans_reg_i_2__13/O, cell gen_deb[14].u2/trans_reg_i_2__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net gen_deb[14].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[14].u2/btn_out_reg_i_1__13/O, cell gen_deb[14].u2/btn_out_reg_i_1__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net gen_deb[15].u2/n_0_cnt_reg[6]_i_2__14 is a gated clock net sourced by a combinational pin gen_deb[15].u2/cnt_reg[6]_i_2__14/O, cell gen_deb[15].u2/cnt_reg[6]_i_2__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net gen_deb[15].u2/n_0_trans_reg_i_2__14 is a gated clock net sourced by a combinational pin gen_deb[15].u2/trans_reg_i_2__14/O, cell gen_deb[15].u2/trans_reg_i_2__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net gen_deb[15].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[15].u2/btn_out_reg_i_1__14/O, cell gen_deb[15].u2/btn_out_reg_i_1__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net gen_deb[1].u2/n_0_cnt_reg[6]_i_2__0 is a gated clock net sourced by a combinational pin gen_deb[1].u2/cnt_reg[6]_i_2__0/O, cell gen_deb[1].u2/cnt_reg[6]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net gen_deb[1].u2/n_0_trans_reg_i_2__0 is a gated clock net sourced by a combinational pin gen_deb[1].u2/trans_reg_i_2__0/O, cell gen_deb[1].u2/trans_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net gen_deb[1].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[1].u2/btn_out_reg_i_1__0/O, cell gen_deb[1].u2/btn_out_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net gen_deb[2].u2/n_0_cnt_reg[6]_i_2__1 is a gated clock net sourced by a combinational pin gen_deb[2].u2/cnt_reg[6]_i_2__1/O, cell gen_deb[2].u2/cnt_reg[6]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net gen_deb[2].u2/n_0_trans_reg_i_2__1 is a gated clock net sourced by a combinational pin gen_deb[2].u2/trans_reg_i_2__1/O, cell gen_deb[2].u2/trans_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net gen_deb[2].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[2].u2/btn_out_reg_i_1__1/O, cell gen_deb[2].u2/btn_out_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net gen_deb[3].u2/n_0_cnt_reg[6]_i_2__2 is a gated clock net sourced by a combinational pin gen_deb[3].u2/cnt_reg[6]_i_2__2/O, cell gen_deb[3].u2/cnt_reg[6]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net gen_deb[3].u2/n_0_trans_reg_i_2__2 is a gated clock net sourced by a combinational pin gen_deb[3].u2/trans_reg_i_2__2/O, cell gen_deb[3].u2/trans_reg_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net gen_deb[3].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[3].u2/btn_out_reg_i_1__2/O, cell gen_deb[3].u2/btn_out_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net gen_deb[4].u2/n_0_cnt_reg[6]_i_2__3 is a gated clock net sourced by a combinational pin gen_deb[4].u2/cnt_reg[6]_i_2__3/O, cell gen_deb[4].u2/cnt_reg[6]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net gen_deb[4].u2/n_0_trans_reg_i_2__3 is a gated clock net sourced by a combinational pin gen_deb[4].u2/trans_reg_i_2__3/O, cell gen_deb[4].u2/trans_reg_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net gen_deb[4].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[4].u2/btn_out_reg_i_1__3/O, cell gen_deb[4].u2/btn_out_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net gen_deb[5].u2/n_0_cnt_reg[6]_i_2__4 is a gated clock net sourced by a combinational pin gen_deb[5].u2/cnt_reg[6]_i_2__4/O, cell gen_deb[5].u2/cnt_reg[6]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net gen_deb[5].u2/n_0_trans_reg_i_2__4 is a gated clock net sourced by a combinational pin gen_deb[5].u2/trans_reg_i_2__4/O, cell gen_deb[5].u2/trans_reg_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net gen_deb[5].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[5].u2/btn_out_reg_i_1__4/O, cell gen_deb[5].u2/btn_out_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net gen_deb[6].u2/n_0_cnt_reg[6]_i_2__5 is a gated clock net sourced by a combinational pin gen_deb[6].u2/cnt_reg[6]_i_2__5/O, cell gen_deb[6].u2/cnt_reg[6]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net gen_deb[6].u2/n_0_trans_reg_i_2__5 is a gated clock net sourced by a combinational pin gen_deb[6].u2/trans_reg_i_2__5/O, cell gen_deb[6].u2/trans_reg_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net gen_deb[6].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[6].u2/btn_out_reg_i_1__5/O, cell gen_deb[6].u2/btn_out_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net gen_deb[7].u2/n_0_cnt_reg[6]_i_2__6 is a gated clock net sourced by a combinational pin gen_deb[7].u2/cnt_reg[6]_i_2__6/O, cell gen_deb[7].u2/cnt_reg[6]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net gen_deb[7].u2/n_0_trans_reg_i_2__6 is a gated clock net sourced by a combinational pin gen_deb[7].u2/trans_reg_i_2__6/O, cell gen_deb[7].u2/trans_reg_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net gen_deb[7].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[7].u2/btn_out_reg_i_1__6/O, cell gen_deb[7].u2/btn_out_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net gen_deb[8].u2/n_0_cnt_reg[6]_i_2__7 is a gated clock net sourced by a combinational pin gen_deb[8].u2/cnt_reg[6]_i_2__7/O, cell gen_deb[8].u2/cnt_reg[6]_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net gen_deb[8].u2/n_0_trans_reg_i_2__7 is a gated clock net sourced by a combinational pin gen_deb[8].u2/trans_reg_i_2__7/O, cell gen_deb[8].u2/trans_reg_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net gen_deb[8].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[8].u2/btn_out_reg_i_1__7/O, cell gen_deb[8].u2/btn_out_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net gen_deb[9].u2/n_0_cnt_reg[6]_i_2__8 is a gated clock net sourced by a combinational pin gen_deb[9].u2/cnt_reg[6]_i_2__8/O, cell gen_deb[9].u2/cnt_reg[6]_i_2__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net gen_deb[9].u2/n_0_trans_reg_i_2__8 is a gated clock net sourced by a combinational pin gen_deb[9].u2/trans_reg_i_2__8/O, cell gen_deb[9].u2/trans_reg_i_2__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net gen_deb[9].u2/trans1 is a gated clock net sourced by a combinational pin gen_deb[9].u2/btn_out_reg_i_1__8/O, cell gen_deb[9].u2/btn_out_reg_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[0].u2/btn_out_reg_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[0].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[0].u2/cnt_reg[6]_i_2 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[0].u2/cnt_reg[0] {LDCE}
+    gen_deb[0].u2/cnt_reg[1] {LDCE}
+    gen_deb[0].u2/cnt_reg[2] {LDCE}
+    gen_deb[0].u2/cnt_reg[3] {LDCE}
+    gen_deb[0].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[0].u2/trans_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[0].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[10].u2/btn_out_reg_i_1__9 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[10].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[10].u2/cnt_reg[6]_i_2__9 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[10].u2/cnt_reg[0] {LDCE}
+    gen_deb[10].u2/cnt_reg[1] {LDCE}
+    gen_deb[10].u2/cnt_reg[2] {LDCE}
+    gen_deb[10].u2/cnt_reg[3] {LDCE}
+    gen_deb[10].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[10].u2/trans_reg_i_2__9 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[10].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[11].u2/btn_out_reg_i_1__10 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[11].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[11].u2/cnt_reg[6]_i_2__10 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[11].u2/cnt_reg[0] {LDCE}
+    gen_deb[11].u2/cnt_reg[1] {LDCE}
+    gen_deb[11].u2/cnt_reg[2] {LDCE}
+    gen_deb[11].u2/cnt_reg[3] {LDCE}
+    gen_deb[11].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[11].u2/trans_reg_i_2__10 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[11].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[12].u2/btn_out_reg_i_1__11 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[12].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[12].u2/cnt_reg[6]_i_2__11 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[12].u2/cnt_reg[0] {LDCE}
+    gen_deb[12].u2/cnt_reg[1] {LDCE}
+    gen_deb[12].u2/cnt_reg[2] {LDCE}
+    gen_deb[12].u2/cnt_reg[3] {LDCE}
+    gen_deb[12].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[12].u2/trans_reg_i_2__11 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[12].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[13].u2/btn_out_reg_i_1__12 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[13].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[13].u2/cnt_reg[6]_i_2__12 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[13].u2/cnt_reg[0] {LDCE}
+    gen_deb[13].u2/cnt_reg[1] {LDCE}
+    gen_deb[13].u2/cnt_reg[2] {LDCE}
+    gen_deb[13].u2/cnt_reg[3] {LDCE}
+    gen_deb[13].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[13].u2/trans_reg_i_2__12 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[13].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[14].u2/btn_out_reg_i_1__13 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[14].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#17 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[14].u2/cnt_reg[6]_i_2__13 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[14].u2/cnt_reg[0] {LDCE}
+    gen_deb[14].u2/cnt_reg[1] {LDCE}
+    gen_deb[14].u2/cnt_reg[2] {LDCE}
+    gen_deb[14].u2/cnt_reg[3] {LDCE}
+    gen_deb[14].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#18 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[14].u2/trans_reg_i_2__13 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[14].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#19 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[15].u2/btn_out_reg_i_1__14 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[15].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#20 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[15].u2/cnt_reg[6]_i_2__14 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[15].u2/cnt_reg[4] {LDCE}
+    gen_deb[15].u2/cnt_reg[0] {LDCE}
+    gen_deb[15].u2/cnt_reg[1] {LDCE}
+    gen_deb[15].u2/cnt_reg[2] {LDCE}
+    gen_deb[15].u2/cnt_reg[3] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#21 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[15].u2/trans_reg_i_2__14 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[15].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#22 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[1].u2/btn_out_reg_i_1__0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[1].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#23 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[1].u2/cnt_reg[6]_i_2__0 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[1].u2/cnt_reg[0] {LDCE}
+    gen_deb[1].u2/cnt_reg[1] {LDCE}
+    gen_deb[1].u2/cnt_reg[2] {LDCE}
+    gen_deb[1].u2/cnt_reg[3] {LDCE}
+    gen_deb[1].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#24 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[1].u2/trans_reg_i_2__0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[1].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#25 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[2].u2/btn_out_reg_i_1__1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[2].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#26 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[2].u2/cnt_reg[6]_i_2__1 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[2].u2/cnt_reg[0] {LDCE}
+    gen_deb[2].u2/cnt_reg[1] {LDCE}
+    gen_deb[2].u2/cnt_reg[2] {LDCE}
+    gen_deb[2].u2/cnt_reg[3] {LDCE}
+    gen_deb[2].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#27 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[2].u2/trans_reg_i_2__1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[2].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#28 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[3].u2/btn_out_reg_i_1__2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[3].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#29 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[3].u2/cnt_reg[6]_i_2__2 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[3].u2/cnt_reg[0] {LDCE}
+    gen_deb[3].u2/cnt_reg[1] {LDCE}
+    gen_deb[3].u2/cnt_reg[2] {LDCE}
+    gen_deb[3].u2/cnt_reg[3] {LDCE}
+    gen_deb[3].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#30 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[3].u2/trans_reg_i_2__2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[3].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#31 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[4].u2/btn_out_reg_i_1__3 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[4].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#32 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[4].u2/cnt_reg[6]_i_2__3 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[4].u2/cnt_reg[0] {LDCE}
+    gen_deb[4].u2/cnt_reg[1] {LDCE}
+    gen_deb[4].u2/cnt_reg[2] {LDCE}
+    gen_deb[4].u2/cnt_reg[3] {LDCE}
+    gen_deb[4].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#33 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[4].u2/trans_reg_i_2__3 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[4].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#34 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[5].u2/btn_out_reg_i_1__4 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[5].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#35 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[5].u2/cnt_reg[6]_i_2__4 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[5].u2/cnt_reg[0] {LDCE}
+    gen_deb[5].u2/cnt_reg[1] {LDCE}
+    gen_deb[5].u2/cnt_reg[2] {LDCE}
+    gen_deb[5].u2/cnt_reg[3] {LDCE}
+    gen_deb[5].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#36 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[5].u2/trans_reg_i_2__4 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[5].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#37 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[6].u2/btn_out_reg_i_1__5 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[6].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#38 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[6].u2/cnt_reg[6]_i_2__5 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[6].u2/cnt_reg[0] {LDCE}
+    gen_deb[6].u2/cnt_reg[1] {LDCE}
+    gen_deb[6].u2/cnt_reg[2] {LDCE}
+    gen_deb[6].u2/cnt_reg[3] {LDCE}
+    gen_deb[6].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#39 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[6].u2/trans_reg_i_2__5 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[6].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#40 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[7].u2/btn_out_reg_i_1__6 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[7].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#41 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[7].u2/cnt_reg[6]_i_2__6 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[7].u2/cnt_reg[0] {LDCE}
+    gen_deb[7].u2/cnt_reg[3] {LDCE}
+    gen_deb[7].u2/cnt_reg[1] {LDCE}
+    gen_deb[7].u2/cnt_reg[2] {LDCE}
+    gen_deb[7].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#42 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[7].u2/trans_reg_i_2__6 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[7].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#43 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[8].u2/btn_out_reg_i_1__7 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[8].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#44 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[8].u2/cnt_reg[6]_i_2__7 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[8].u2/cnt_reg[0] {LDCE}
+    gen_deb[8].u2/cnt_reg[1] {LDCE}
+    gen_deb[8].u2/cnt_reg[2] {LDCE}
+    gen_deb[8].u2/cnt_reg[3] {LDCE}
+    gen_deb[8].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#45 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[8].u2/trans_reg_i_2__7 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[8].u2/trans_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#46 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[9].u2/btn_out_reg_i_1__8 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[9].u2/btn_out_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#47 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[9].u2/cnt_reg[6]_i_2__8 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[9].u2/cnt_reg[0] {LDCE}
+    gen_deb[9].u2/cnt_reg[1] {LDCE}
+    gen_deb[9].u2/cnt_reg[2] {LDCE}
+    gen_deb[9].u2/cnt_reg[3] {LDCE}
+    gen_deb[9].u2/cnt_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#48 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT gen_deb[9].u2/trans_reg_i_2__8 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    gen_deb[9].u2/trans_reg {LDCE}
+
 Related violations: <none>
 
 

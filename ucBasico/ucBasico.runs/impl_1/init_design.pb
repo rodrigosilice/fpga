@@ -15,12 +15,6 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-Ú
-ÑNetlist '%s' is not ideal for floorplanning, since the cellview '%s' defined in file '%s' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-43*netlist2
-toplevel2default:default2.
-MicroBlaze__parameterized02default:default2 
-toplevel.edf2default:defaultZ29-43
 o
 Netlist was created with %s %s291*project2
 Vivado2default:default2
@@ -104,9 +98,9 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2 
 get_clocks: 2default:default2
 00:00:122default:default2
-00:00:132default:default2
-899.6802default:default2
-421.1912default:defaultZ17-268
+00:00:122default:default2
+900.6842default:default2
+421.6682default:defaultZ17-268
 ÿ
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2‚
@@ -228,9 +222,9 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
 00:00:182default:default2
-00:00:192default:default2
-909.4182default:default2
-721.6762default:defaultZ17-268
+00:00:182default:default2
+910.2232default:default2
+723.0942default:defaultZ17-268
 
 
 End Record

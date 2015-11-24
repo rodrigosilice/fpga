@@ -2,8 +2,8 @@
 # Vivado v2014.1 (64-bit)
 # SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
 # IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-# Start of session at: Mon Nov 23 20:38:03 2015
-# Process ID: 8200
+# Start of session at: Mon Nov 23 22:04:30 2015
+# Process ID: 10076
 # Log file: T:/Rodrigo/fpga/ucBasico/ucBasico.runs/synth_1/toplevel.vds
 # Journal file: T:/Rodrigo/fpga/ucBasico/ucBasico.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
@@ -47,6 +47,7 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/dat
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/microblazer.bd]
 # read_vhdl -library xil_defaultlib {
+#   {T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd}
 #   T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd
 #   T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd
 # }
@@ -65,10 +66,10 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 284.211 ; gain = 148.824
+Starting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 284.664 ; gain = 149.871
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'toplevel' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd:41]
-INFO: [Synth 8-3491] module 'microblazer_wrapper' declared at 'T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd:14' bound to instance 'u1' of component 'microblazer_wrapper' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd:56]
+INFO: [Synth 8-3491] module 'microblazer_wrapper' declared at 'T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd:14' bound to instance 'u1' of component 'microblazer_wrapper' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd:79]
 INFO: [Synth 8-638] synthesizing module 'microblazer_wrapper' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd:23]
 INFO: [Synth 8-3491] module 'microblazer' declared at 'T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer.vhd:1632' bound to instance 'microblazer_i' of component 'microblazer' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd:33]
 INFO: [Synth 8-638] synthesizing module 'microblazer' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer.vhd:1643]
@@ -4464,9 +4465,48 @@ INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized0' (8
 INFO: [Synth 8-256] done synthesizing module 'microblazer_rst_clk_wiz_1_100M_0' (89#1) [t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/ip/microblazer_rst_clk_wiz_1_100M_0/synth/microblazer_rst_clk_wiz_1_100M_0.vhd:74]
 INFO: [Synth 8-256] done synthesizing module 'microblazer' (90#1) [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer.vhd:1643]
 INFO: [Synth 8-256] done synthesizing module 'microblazer_wrapper' (91#1) [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'toplevel' (92#1) [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd:41]
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debounce__parameterized0' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:17]
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'trans' is read in the process but is not in the sensitivity list [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:25]
+WARNING: [Synth 8-614] signal 'btn_in' is read in the process but is not in the sensitivity list [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:25]
+WARNING: [Synth 8-614] signal 'cnt' is read in the process but is not in the sensitivity list [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'debounce__parameterized0' (92#1) [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:17]
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+	Parameter fclk bound to: 10000 - type: integer 
+	Parameter tdb bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (93#1) [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd:41]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 542.223 ; gain = 406.836
+Finished RTL Elaboration : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 541.809 ; gain = 407.016
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -4560,7 +4600,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:47 ; elapsed = 00:01:54 . Memory (MB): peak = 647.305 ; gain = 511.918
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 ---------------------------------------------------------------------------------
 
 
@@ -4589,11 +4629,11 @@ Applied set_property DONT_TOUCH = true for U0. (constraint file  T:/Rodrigo/fpga
 Applied set_property DONT_TOUCH = true for U0. (constraint file  T:/Rodrigo/fpga/ucBasico/ucBasico.runs/synth_1/dont_touch.xdc, line 93).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  T:/Rodrigo/fpga/ucBasico/ucBasico.runs/synth_1/dont_touch.xdc, line 101).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 647.305 ; gain = 511.918
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 647.305 ; gain = 511.918
+Finished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 647.750 ; gain = 512.957
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-4471] merging register 'SWAP_Instr_reg' into 'Reverse_Mem_Access_reg' [t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/decode.vhd:2234]
@@ -4609,6 +4649,9 @@ INFO: [Synth 8-4471] merging register 'Add_Output_DFFs.M_AXI_DP_ARADDR_reg[31:0]
 INFO: [Synth 8-4471] merging register 'Area_Debug_Control.pc_brk_1_reg' into 'Area_Debug_Control.dbg_hit_i_1_reg[0:0]' [t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/debug.vhd:2426]
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/2e81f3ad/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:136]
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [t:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/51a8c173/hdl/src/vhdl/sequence.vhd:222]
+WARNING: [Synth 8-327] inferring latch for variable 'btn_out_reg' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_reg' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'trans_reg' [T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd:28]
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -4624,6 +4667,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 16    
 	   2 Input      6 Bit       Adders := 3     
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
@@ -4660,17 +4704,18 @@ Detailed RTL Component Info :
 	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 12    
 	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 16    
 	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 4     
 	   2 Input      3 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 15    
-	  10 Input      1 Bit        Muxes := 1     
-	  16 Input      1 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 286   
 	   3 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 318   
+	  10 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 6     
 
 ---------------------------------------------------------------------------------
@@ -5150,6 +5195,13 @@ Module microblazer
 Detailed RTL Component Info : 
 Module microblazer_wrapper 
 Detailed RTL Component Info : 
+Module debounce__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -5274,7 +5326,7 @@ INFO: [Synth 8-3332] Sequential element (\inst/gen_sasd.crossbar_sasd_0/addr_arb
 INFO: [Synth 8-3332] Sequential element (\inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_amesg_i_reg[43] ) is unused and will be removed from module microblazer_xbar_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 669.508 ; gain = 534.121
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 669.871 ; gain = 535.078
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -5360,7 +5412,7 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:08 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 
@@ -5372,11 +5424,11 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:09 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 
@@ -5384,7 +5436,7 @@ Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 
@@ -5408,7 +5460,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 
@@ -5423,7 +5475,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 
@@ -5431,7 +5483,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -5459,12 +5511,12 @@ Report Cell Usage:
 |2     |BUFG       |     4|
 |3     |GND        |     2|
 |4     |INV        |     1|
-|5     |LUT1       |    25|
-|6     |LUT2       |   501|
-|7     |LUT3       |   175|
-|8     |LUT4       |   327|
-|9     |LUT5       |   256|
-|10    |LUT6       |   377|
+|5     |LUT1       |    41|
+|6     |LUT2       |   533|
+|7     |LUT3       |   207|
+|8     |LUT4       |   343|
+|9     |LUT5       |   288|
+|10    |LUT6       |   457|
 |11    |LUT6_2     |    97|
 |12    |MMCME2_ADV |     1|
 |13    |MULT_AND   |     3|
@@ -5488,55 +5540,72 @@ Report Cell Usage:
 |31    |FDRE_1     |     1|
 |32    |FDS        |     5|
 |33    |FDSE       |    71|
-|34    |IBUF       |    18|
-|35    |OBUF       |    16|
+|34    |LD         |    16|
+|35    |LDC        |   128|
+|36    |IBUF       |    18|
+|37    |OBUF       |    16|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+----------------------------------------------------+--------------------------------------+------+
 |      |Instance                                            |Module                                |Cells |
 +------+----------------------------------------------------+--------------------------------------+------+
-|1     |top                                                 |                                      |  7863|
-|2     |  u1                                                |microblazer_wrapper                   |  7830|
-|3     |    microblazer_i                                   |microblazer                           |  7829|
-|4     |      axi_gpio_LED                                  |microblazer_axi_gpio_0_0              |   232|
-|5     |        U0                                          |axi_gpio__parameterized0              |   232|
-|6     |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync__1                           |    64|
-|7     |      axi_gpio_SW                                   |microblazer_axi_gpio_0_1              |   232|
-|8     |        U0                                          |axi_gpio__parameterized2              |   232|
-|9     |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync                              |    64|
-|10    |      clk_wiz_1                                     |microblazer_clk_wiz_1_0               |     4|
-|11    |        U0                                          |microblazer_clk_wiz_1_0_clk_wiz       |     4|
-|12    |      mdm_1                                         |microblazer_mdm_1_0                   |   382|
-|13    |        U0                                          |MDM__parameterized0                   |   382|
-|14    |      microblaze_0                                  |microblazer_microblaze_0_0            |  6582|
-|15    |        U0                                          |MicroBlaze__parameterized0            |  6582|
-|16    |      microblaze_0_axi_periph                       |microblazer_microblaze_0_axi_periph_0 |   311|
-|17    |        xbar                                        |microblazer_xbar_0                    |   311|
-|18    |      rst_clk_wiz_1_100M                            |microblazer_rst_clk_wiz_1_100M_0      |    64|
-|19    |      microblaze_0_local_memory                     |microblaze_0_local_memory_imp_Z0DGSF  |    20|
-|20    |        dlmb_bram_if_cntlr                          |microblazer_dlmb_bram_if_cntlr_0      |     8|
-|21    |        dlmb_v10                                    |microblazer_dlmb_v10_0                |     1|
-|22    |          U0                                        |lmb_v10__parameterized0__1            |     1|
-|23    |        ilmb_bram_if_cntlr                          |microblazer_ilmb_bram_if_cntlr_0      |     7|
-|24    |        ilmb_v10                                    |microblazer_ilmb_v10_0                |     1|
-|25    |          U0                                        |lmb_v10__parameterized0               |     1|
-|26    |        lmb_bram                                    |microblazer_lmb_bram_0                |     2|
+|1     |top                                                 |                                      |  8215|
+|2     |  \gen_deb[0].u2                                    |debounce__parameterized0              |    22|
+|3     |  \gen_deb[10].u2                                   |debounce__parameterized0_0            |    22|
+|4     |  \gen_deb[11].u2                                   |debounce__parameterized0_1            |    22|
+|5     |  \gen_deb[12].u2                                   |debounce__parameterized0_2            |    22|
+|6     |  \gen_deb[13].u2                                   |debounce__parameterized0_3            |    22|
+|7     |  \gen_deb[14].u2                                   |debounce__parameterized0_4            |    22|
+|8     |  \gen_deb[15].u2                                   |debounce__parameterized0_5            |    22|
+|9     |  \gen_deb[1].u2                                    |debounce__parameterized0_6            |    22|
+|10    |  \gen_deb[2].u2                                    |debounce__parameterized0_7            |    22|
+|11    |  \gen_deb[3].u2                                    |debounce__parameterized0_8            |    22|
+|12    |  \gen_deb[4].u2                                    |debounce__parameterized0_9            |    22|
+|13    |  \gen_deb[5].u2                                    |debounce__parameterized0_10           |    22|
+|14    |  \gen_deb[6].u2                                    |debounce__parameterized0_11           |    22|
+|15    |  \gen_deb[7].u2                                    |debounce__parameterized0_12           |    22|
+|16    |  \gen_deb[8].u2                                    |debounce__parameterized0_13           |    22|
+|17    |  \gen_deb[9].u2                                    |debounce__parameterized0_14           |    22|
+|18    |  u1                                                |microblazer_wrapper                   |  7830|
+|19    |    microblazer_i                                   |microblazer                           |  7829|
+|20    |      axi_gpio_LED                                  |microblazer_axi_gpio_0_0              |   232|
+|21    |        U0                                          |axi_gpio__parameterized0              |   232|
+|22    |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync__1                           |    64|
+|23    |      axi_gpio_SW                                   |microblazer_axi_gpio_0_1              |   232|
+|24    |        U0                                          |axi_gpio__parameterized2              |   232|
+|25    |          \gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3  |cdc_sync                              |    64|
+|26    |      clk_wiz_1                                     |microblazer_clk_wiz_1_0               |     4|
+|27    |        U0                                          |microblazer_clk_wiz_1_0_clk_wiz       |     4|
+|28    |      mdm_1                                         |microblazer_mdm_1_0                   |   382|
+|29    |        U0                                          |MDM__parameterized0                   |   382|
+|30    |      microblaze_0                                  |microblazer_microblaze_0_0            |  6582|
+|31    |        U0                                          |MicroBlaze__parameterized0            |  6582|
+|32    |      microblaze_0_axi_periph                       |microblazer_microblaze_0_axi_periph_0 |   311|
+|33    |        xbar                                        |microblazer_xbar_0                    |   311|
+|34    |      rst_clk_wiz_1_100M                            |microblazer_rst_clk_wiz_1_100M_0      |    64|
+|35    |      microblaze_0_local_memory                     |microblaze_0_local_memory_imp_Z0DGSF  |    20|
+|36    |        dlmb_bram_if_cntlr                          |microblazer_dlmb_bram_if_cntlr_0      |     8|
+|37    |        dlmb_v10                                    |microblazer_dlmb_v10_0                |     1|
+|38    |          U0                                        |lmb_v10__parameterized0__1            |     1|
+|39    |        ilmb_bram_if_cntlr                          |microblazer_ilmb_bram_if_cntlr_0      |     7|
+|40    |        ilmb_v10                                    |microblazer_ilmb_v10_0                |     1|
+|41    |          U0                                        |lmb_v10__parameterized0               |     1|
+|42    |        lmb_bram                                    |microblazer_lmb_bram_0                |     2|
 +------+----------------------------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
 ---------------------------------------------------------------------------------
 
-Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 699.605 ; gain = 564.219
-INFO: [Netlist 29-17] Analyzing 414 Unisim elements for replacement
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 699.508 ; gain = 564.715
+INFO: [Netlist 29-17] Analyzing 558 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'toplevel' is not ideal for floorplanning, since the cellview 'MicroBlaze__parameterized0' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 12 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 328 instances were transformed.
+  A total of 472 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 27 instances
   FD => FDRE: 32 instances
   FDC_1 => FDCE (inverted pins: C): 1 instances
@@ -5544,6 +5613,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 1 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instances
   FDS => FDSE: 5 instances
+  LD => LDCE: 16 instances
+  LDC => LDCE: 128 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 97 instances
   MULT_AND => LUT2: 3 instances
   MUXF5 => LUT3: 32 instances
@@ -5551,10 +5622,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-621 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+623 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:12 . Memory (MB): peak = 699.605 ; gain = 464.316
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 699.508 ; gain = 464.406
 # write_checkpoint toplevel.dcp
 # report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 699.605 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 20:40:21 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 699.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 22:06:47 2015...

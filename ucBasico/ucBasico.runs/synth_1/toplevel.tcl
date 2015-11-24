@@ -40,6 +40,7 @@ set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property is_locked true [get_files T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/microblazer.bd]
 
 read_vhdl -library xil_defaultlib {
+  {T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/imports/8-9 problemas/debounce.vhd}
   T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/bd/microblazer/hdl/microblazer_wrapper.vhd
   T:/Rodrigo/fpga/ucBasico/ucBasico.srcs/sources_1/new/toplevel.vhd
 }

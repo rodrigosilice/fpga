@@ -48,7 +48,30 @@ architecture Behavioral of toplevel is
             );
     end component;
     
+    COMPONENT debounce is
+            generic(
+                fclk : natural := 100_000_000; -- frequencia do clk (Hz)
+                tdb  : natural := 10   -- debounce time (ms)
+            );
+            port(
+                clk     : in STD_LOGIC;
+                btn_in  : in STD_LOGIC;
+                btn_out : out STD_LOGIC
+            );
+    end COMPONENT;
+            
     signal rst_interno : std_logic :='0';
+    
+    --------------------------
+    -- sinais
+    --------------------------
+        signal s_clk      : std_logic := '0';
+        signal swi :    std_logic_vector(15 downto 0);
+    --------------------------
+    -- constant
+    -------------------------- 
+    --constant half_period : time := 0.005 ns;   --100 Mhz
+    constant half_period : time := 0.1 ms;   -- 10Khz
     
 begin
     rst_interno <= not btnCpuReset;
@@ -57,10 +80,27 @@ begin
         port map(
             clk_in1 => clk,
             gpio_led_tri_o => led,
-            gpio_sw_tri_i => sw,
+            gpio_sw_tri_i => swi,
             reset => rst_interno
         );
 
-
+    -- Aqui mapeamos o compomente
+    
+    
+   
+ gen_deb: for n in 0 to 15 generate
+    u2 : debounce
+        GENERIC MAP(
+            fclk => 10_000,
+            tdb => 10
+        )
+         PORT MAP(
+            clk => s_clk,
+            btn_in => sw(n),
+            btn_out => swi(n)
+        );  
+    end generate gen_deb;
+    
+     
 
 end Behavioral;
